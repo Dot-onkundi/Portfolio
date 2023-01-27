@@ -16,12 +16,15 @@ import { useState } from 'react'
 
 
 
-const Navbar = () => {
+const Allcomponents = () => {
   const[darkMode, setDarkMode]=useState(false);
   
 
 
   return (
+    // Navbar
+
+
     <div className={darkMode? 'dark' :'' }>
       <div className='text-[#000] bg-white px-10  dark:bg-gray-500'>
       <section className=' h-screen '>
@@ -36,6 +39,9 @@ const Navbar = () => {
             </li>            
            </ul>
         </nav>
+        {/* Hero section */}
+
+
         
         <div className='text-center p-10 '>
           <h2 className='text-5xl text-teal-500 font-medium '>Onkundi Felix</h2>
@@ -55,6 +61,11 @@ const Navbar = () => {
         <div className=''>
           <img src={ProfilePic} alt='none' className='-rotate-[45] rounded-full mx-auto w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96' />
         </div>
+
+
+
+        {/* Cards */}
+
         <section>
 
         <div >
@@ -107,11 +118,19 @@ const Navbar = () => {
 
       </section>  
 
+
+
+
+
+    {/* Portfolio section */}
+
       <div className="div">
         <h3 className='text-3xl py-1'>Portfolio</h3>
         <p className='text-md py-2 leading-8 text-gray-600'>Having worked for various <span className='text-teal-500'> Companies </span> and <span className='text-teal-500'> Startups </span> here is a sample of my beautiful work</p>
         
       </div> 
+
+      {/* Portfolio images */}
       <div className="">
         <div className=" gap-10 justify-between lg:flex lg:flex-row lg:fle-wrap">
           <ul> 
@@ -139,14 +158,11 @@ const Navbar = () => {
           </div>
 
           </ul>
+
+
+
           
-          
-        
-        
-        
-        
-       
-        
+        {/* Infosection */}
 
         </div>
       </div>
@@ -156,21 +172,12 @@ const Navbar = () => {
           <p className='text-md py-2 leading-8 text-gray-600'> My services range from programing to leadership for teams. Let us connect! </p>
           <p className='text-md py-2 leading-8 text-gray-600'> onkundifelix@outlook.com</p>
         </div>
- 
-
-        
-      </section>
-      
-      
-      
-        
-
-      
+         
+      </section>         
     </div>
-      
     </div>
     
   )
 }
 
-export default Navbar
+export default Allcomponents

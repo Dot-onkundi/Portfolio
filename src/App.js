@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './components/Navbar';
+import Allcomponents from './components/Allcomponents';
 import './index.css'
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Allcomponents/>
       
     
     </div>
