@@ -12,6 +12,7 @@ import DesignFour from './images/web4.png'
 import DesignFive from './images/web5.png'
 import DesignSix from './images/web6.png'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 
 
@@ -51,10 +52,10 @@ const Allcomponents = () => {
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 ">
         
         
-        <FaLinkedin className=''/>
-        <FaGithubSquare className=''/>
-        <FaInstagramSquare  className=''/>
-        <FaTwitterSquare className=''/>
+        <Link target='_blank' to='//www.linkedin.com/in/onkundifelix'>    <FaLinkedin   className=''/>   </Link>
+        <Link target='_blank' to='//github.com/Dot-onkundi'>        <FaGithubSquare  className=''/> </Link>
+        <Link  target='_blank' to='//www.linkedin.com/in/onkundifelix'>        < FaInstagramSquare className=''/> </Link>
+        <Link target='_blank' to='//twitter.com/Onkundi_Felix'>        <FaTwitterSquare  className=''/> </Link>
 
 
         </div>
