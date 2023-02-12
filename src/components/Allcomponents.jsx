@@ -30,7 +30,7 @@ const Allcomponents = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_el4m20p', 'template_ftkn2af', form.current, '-S2EjjhiNJ0MFGusO')
+    emailjs.sendForm('service_el4m20p', 'template_0midorp', form.current, '-S2EjjhiNJ0MFGusO')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -152,7 +152,7 @@ const Allcomponents = () => {
 
       {/* Portfolio images */}
       <div className="max-w-[1240px] mx-auto">
-        <div className=" gap-10 justify-between lg:flex lg:flex-row lg:fle-wrap">
+        <div className=" gap-10 justify-between lg:flex lg:flex-row lg:flex-wrap">
           <ul> 
             <div className='py-10'>
             <img src={DesignOne} alt='none' className='rounded-lg object-cover mx-auto'/>          
